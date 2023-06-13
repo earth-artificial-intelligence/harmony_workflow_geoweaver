@@ -1,0 +1,491 @@
+[{
+  "history_id" : "badzpw29qx9",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686608782802,
+  "history_end_time" : 1686608786260,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "nw7h3gm2tw2",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686608593514,
+  "history_end_time" : 1686608597029,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "2795y4o5o0k",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686608473288,
+  "history_end_time" : 1686608476780,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "cioed3ifyjc",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686608385413,
+  "history_end_time" : 1686608388895,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "6gfgw3wipzi",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686608279891,
+  "history_end_time" : 1686608283350,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "2xrbafsnx2m",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686607847771,
+  "history_end_time" : 1686607851299,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "t6jz8wwjnkn",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686607733712,
+  "history_end_time" : 1686607737297,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ef726rybzyc",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686607035365,
+  "history_end_time" : 1686607038867,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4cy99uw5dku",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686606951158,
+  "history_end_time" : 1686606954623,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ysnza7lf1xn",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686606789361,
+  "history_end_time" : 1686606792848,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "6cqy4xs95ho",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686606655473,
+  "history_end_time" : 1686606659023,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "3g4brxkxgon",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686606279379,
+  "history_end_time" : 1686606282963,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "hcj4swdcjbx",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686606106347,
+  "history_end_time" : 1686606109987,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "m4w8vgjs0az",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686605734889,
+  "history_end_time" : 1686605738393,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "m8nzqcnncrc",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686605611525,
+  "history_end_time" : 1686605615031,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "z1po7nxeavw",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686605527952,
+  "history_end_time" : 1686605531514,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "8hdnnezizap",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686605071308,
+  "history_end_time" : 1686605075003,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "6e4pcmlmrhz",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604878326,
+  "history_end_time" : 1686604881976,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "f54uddoh987",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604694000,
+  "history_end_time" : 1686604697610,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4m08tssv20r",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604527439,
+  "history_end_time" : 1686604531057,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "sy2mjg5thr3",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604414978,
+  "history_end_time" : 1686604418633,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "3rkpwd1tko3",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604193046,
+  "history_end_time" : 1686604196732,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "t0iktcdd4w1",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686604139759,
+  "history_end_time" : 1686604143349,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "8c2us1j5gw8",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686603945901,
+  "history_end_time" : 1686603949502,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "lmbgt6u0iwi",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686603833916,
+  "history_end_time" : 1686603837690,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ayonb6ybswo",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686603748570,
+  "history_end_time" : 1686603752187,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "zlke1lzuhfr",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686603402988,
+  "history_end_time" : 1686603406498,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4685ygcrqrm",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686602346389,
+  "history_end_time" : 1686602349848,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "jry174rim72",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686602243288,
+  "history_end_time" : 1686602246764,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "155h0co5n7z",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686602096199,
+  "history_end_time" : 1686602099715,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "j3otzy3pqk9",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686602000477,
+  "history_end_time" : 1686602003992,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "2nuxt73doly",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686601798787,
+  "history_end_time" : 1686601802382,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "lb4bnbp5ofl",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686601350738,
+  "history_end_time" : 1686601354331,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "kjtuqlyn7iz",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686601062397,
+  "history_end_time" : 1686601065970,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "jzkdxgcpnh5",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686600313547,
+  "history_end_time" : 1686600317094,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4ai6v1d3ajj",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686599901080,
+  "history_end_time" : 1686599904832,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "iqfgntrq9wx",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598922377,
+  "history_end_time" : 1686598925967,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4tvfq3227py",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598806668,
+  "history_end_time" : 1686598810167,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "gn0omnx75t6",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598692165,
+  "history_end_time" : 1686598695697,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "3cfi219q2gr",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598462905,
+  "history_end_time" : 1686598466422,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "si3c8jcmigm",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598386270,
+  "history_end_time" : 1686598389783,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "equqwn2lzel",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598186649,
+  "history_end_time" : 1686598190153,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "d78983wzqo6",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686598001810,
+  "history_end_time" : 1686598005331,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "b90bqdjm4s7",
+  "history_input" : "urs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "Traceback (most recent call last):\n  File \"/home/jovyan/gw-workspace/b90bqdjm4s7/authenticate.py\", line 6, in <module>\n    netrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\nNameError: name 'system' is not defined\n",
+  "history_begin_time" : 1686597956305,
+  "history_end_time" : 1686597956952,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "msjaxhjp1f0",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686600176895,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "gtjm6bblq5e",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686604133447,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "c73hprxfqtp",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686604688325,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "0bhxfuntaeh",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686608251834,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "y8sx85dr8bm",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686608274448,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]

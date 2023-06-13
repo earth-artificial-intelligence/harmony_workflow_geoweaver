@@ -1,0 +1,51 @@
+[{
+  "history_id" : "mi946lhza9n",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686605522989,
+  "history_end_time" : 1686605527637,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "z1po7nxeavw",
+  "history_input" : "from utils import *\n\nurs = 'urs.earthdata.nasa.gov'    # Earthdata URL endpoint for authentication\nprompts = ['Enter NASA Earthdata Login Username: ',\n           'Enter NASA Earthdata Login Password: ']\n\n# Determine the OS (Windows machines usually use an '_netrc' file)\nnetrc_name = \"_netrc\" if system()==\"Windows\" else \".netrc\"\n\n# Determine if netrc file exists, and if so, if it includes NASA Earthdata Login Credentials\ntry:\n    netrcDir = os.path.expanduser(f\"~/{netrc_name}\")\n    netrc(netrcDir).authenticators(urs)[0]\n\n# Below, create a netrc file and prompt user for NASA Earthdata Login Username and Password\nexcept FileNotFoundError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('touch {0}{2} | echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)\n    # Set restrictive permissions\n    Popen('chmod 0600 {0}{1}'.format(homeDir + os.sep, netrc_name), shell=True)\n\n    # Determine OS and edit netrc file if it exists but is not set up for NASA Earthdata Login\nexcept TypeError:\n    homeDir = os.path.expanduser(\"~\")\n    Popen('echo machine {1} >> {0}{2}'.format(homeDir + os.sep, urs, netrc_name), shell=True)\n    Popen('echo login {} >> {}{}'.format(getpass(prompt=prompts[0]), homeDir + os.sep, netrc_name), shell=True)\n    Popen('echo \\'password {} \\'>> {}{}'.format(getpass(prompt=prompts[1]), homeDir + os.sep, netrc_name), shell=True)",
+  "history_output" : "",
+  "history_begin_time" : 1686605527952,
+  "history_end_time" : 1686605531514,
+  "history_notes" : null,
+  "history_process" : "y2amjw",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "xxlqleauv1h",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686605527641,
+  "history_notes" : null,
+  "history_process" : "cqp5y5",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "eznr7dd7fpb",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686605527642,
+  "history_notes" : null,
+  "history_process" : "gqu5u6",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "j4i7gtio90j",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1686605527643,
+  "history_notes" : null,
+  "history_process" : "dh8stf",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+}]

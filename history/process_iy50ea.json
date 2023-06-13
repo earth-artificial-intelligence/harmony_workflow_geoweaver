@@ -1,0 +1,501 @@
+[{
+  "history_id" : "9s1vov5h313",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608777802,
+  "history_end_time" : 1686608781373,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "itsckqn5oi3",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608588175,
+  "history_end_time" : 1686608591657,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "qpnpy4r8wnf",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608468174,
+  "history_end_time" : 1686608471662,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eloj43q5wv2",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608380732,
+  "history_end_time" : 1686608384194,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "60q5ew1sd66",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608275342,
+  "history_end_time" : 1686608278782,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "05cbto1bxrt",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686608252844,
+  "history_end_time" : 1686608274447,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "bjvgz0brvy0",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "Running",
+  "history_begin_time" : 1686608247576,
+  "history_end_time" : 1686608250841,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "lyivs492c3h",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686607842858,
+  "history_end_time" : 1686607846375,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "h017vkqwrbv",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686607728679,
+  "history_end_time" : 1686607732203,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "qs5yxn7qkas",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686607030003,
+  "history_end_time" : 1686607033561,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "mylu8uv052i",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686606946101,
+  "history_end_time" : 1686606949622,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "qhd31nay5dv",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686606784588,
+  "history_end_time" : 1686606788023,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "wcinngdxgmr",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686606650795,
+  "history_end_time" : 1686606654307,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "u7xba7yrm7r",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686606274226,
+  "history_end_time" : 1686606277790,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ijhk7693fgc",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686606101448,
+  "history_end_time" : 1686606104968,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "v0f4sg9ed23",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686605730043,
+  "history_end_time" : 1686605733704,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "65onkrietjp",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686605606522,
+  "history_end_time" : 1686605610024,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "mi946lhza9n",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686605522989,
+  "history_end_time" : 1686605527637,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "sbvbecycvp5",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686605066266,
+  "history_end_time" : 1686605069874,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ko3m3dza44i",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604873537,
+  "history_end_time" : 1686604877100,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "z5h2nxzaauz",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604689819,
+  "history_end_time" : 1686604692163,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "cv4ur02h0q0",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604688564,
+  "history_end_time" : 1686604692154,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "jfdsffuuj5n",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604522014,
+  "history_end_time" : 1686604525648,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "83i9gxk2s4b",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604409978,
+  "history_end_time" : 1686604413708,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "zpqzcxzq0n1",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604187729,
+  "history_end_time" : 1686604191286,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4omaen0ljry",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604135059,
+  "history_end_time" : 1686604138645,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "w1zy5qt02tq",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686604072534,
+  "history_end_time" : 1686604133447,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "j1yg5g7oddg",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686603940743,
+  "history_end_time" : 1686603944347,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "f4jjoiuvyp6",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686603828599,
+  "history_end_time" : 1686603832160,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "dhpkqeudr8c",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686603743388,
+  "history_end_time" : 1686603747136,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "v6wfzfye4ha",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686603397987,
+  "history_end_time" : 1686603401719,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "94tfb99xhfk",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686602340931,
+  "history_end_time" : 1686602344519,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "exrhw5sp331",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686602238433,
+  "history_end_time" : 1686602241874,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "8vvuybei103",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686602091064,
+  "history_end_time" : 1686602094556,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "yold6lwvd1e",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686601995799,
+  "history_end_time" : 1686601999321,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "s7zyw9kl1uf",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686601793932,
+  "history_end_time" : 1686601797555,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "9vyxsv0y85b",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686601345429,
+  "history_end_time" : 1686601348962,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "xox95tm61mc",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686601057775,
+  "history_end_time" : 1686601061347,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "xyz6c1zqmwd",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686600308306,
+  "history_end_time" : 1686600311827,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "70bp8n9ia2t",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686600172707,
+  "history_end_time" : 1686600176895,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "l3bu59r5317",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686599895702,
+  "history_end_time" : 1686599899367,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "guvevemytez",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598917649,
+  "history_end_time" : 1686598921128,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "yk04rn7lzov",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598802012,
+  "history_end_time" : 1686598805535,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "rply5ukjps7",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598687444,
+  "history_end_time" : 1686598691026,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "uyaa72n9oow",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598457436,
+  "history_end_time" : 1686598460907,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eajkvs3tbje",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598381733,
+  "history_end_time" : 1686598385228,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "lqp1gohsr43",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686598181519,
+  "history_end_time" : 1686598185023,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "gcxncp0cjue",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686597996648,
+  "history_end_time" : 1686598000168,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ef8yu1drh9q",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686597951304,
+  "history_end_time" : 1686597954902,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eMoEskMucpom",
+  "history_input" : "# Earthdata Login\nfrom netrc import netrc\nfrom subprocess import Popen\nfrom platform import system\nfrom getpass import getpass\nimport os\n\n# Direct access\nimport requests\nimport s3fs\nimport xarray as xr\nimport hvplot.xarray\n\n# Harmony\nfrom harmony import BBox, Client, Collection, Request, LinkType\nfrom harmony.config import Environment\nfrom pprint import pprint\nimport datetime as dt",
+  "history_output" : "",
+  "history_begin_time" : 1686597699517,
+  "history_end_time" : 1686597702411,
+  "history_notes" : null,
+  "history_process" : "iy50ea",
+  "host_id" : null,
+  "indicator" : "Done"
+},]

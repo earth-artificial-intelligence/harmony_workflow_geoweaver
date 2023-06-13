@@ -1,0 +1,9 @@
+{
+  "id" : "g9f31x68j54tgzau60pf",
+  "name" : "Direct Access & Harmony workflow",
+  "description" : "",
+  "owner" : "111111",
+  "confidential" : "FALSE",
+  "edges" : "[{\"source\":{\"title\":\"utils\",\"id\":\"iy50ea-bjl3n\",\"x\":225,\"y\":469.5,\"color\":\"green\"},\"target\":{\"title\":\"authenticate\",\"id\":\"y2amjw-Dnytd\",\"x\":398,\"y\":467.5,\"color\":\"green\"}},{\"source\":{\"title\":\"authenticate\",\"id\":\"y2amjw-Dnytd\",\"x\":398,\"y\":467.5,\"color\":\"green\"},\"target\":{\"title\":\"podaac_s3\",\"id\":\"cqp5y5-VfulM\",\"x\":575,\"y\":468.5,\"color\":\"green\"}},{\"source\":{\"title\":\"podaac_s3\",\"id\":\"cqp5y5-VfulM\",\"x\":575,\"y\":468.5,\"color\":\"green\"},\"target\":{\"title\":\"harmony_connect_process\",\"id\":\"u09gh6-UWbai\",\"x\":856.7482299804688,\"y\":463.6691589355469,\"color\":\"green\"}},{\"source\":{\"title\":\"harmony_connect_process\",\"id\":\"u09gh6-UWbai\",\"x\":856.7482299804688,\"y\":463.6691589355469,\"color\":\"green\"},\"target\":{\"title\":\"end\",\"id\":\"dh8stf-7hTrq\",\"x\":1123.4957885742188,\"y\":465.28143310546875,\"color\":\"green\"}}]",
+  "nodes" : "[{\"title\":\"utils\",\"id\":\"iy50ea-bjl3n\",\"x\":225,\"y\":469.5,\"color\":\"green\"},{\"title\":\"authenticate\",\"id\":\"y2amjw-Dnytd\",\"x\":398,\"y\":467.5,\"color\":\"green\"},{\"title\":\"podaac_s3\",\"id\":\"cqp5y5-VfulM\",\"x\":575,\"y\":468.5,\"color\":\"green\"},{\"title\":\"end\",\"id\":\"dh8stf-7hTrq\",\"x\":1123.4957885742188,\"y\":465.28143310546875,\"color\":\"green\"},{\"title\":\"harmony_connect_process\",\"id\":\"u09gh6-UWbai\",\"x\":856.7482299804688,\"y\":463.6691589355469,\"color\":\"green\"}]"
+}
